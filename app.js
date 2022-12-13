@@ -22,6 +22,9 @@ const corsOptions ={
     optionSuccessStatus:200
 }
 
+app.get('/',(req,res)=>{
+    res.send("Api is running!");
+})
 
 app.use(cors(corsOptions));
 app.use(cookieparser());
